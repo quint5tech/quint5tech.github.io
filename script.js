@@ -1,9 +1,11 @@
+// Welcome! Source code available here (https://git.io/fjuD7)
+
 // Responsive Queries (Top)
 
-function topNav() {
+function topNavbar() {
   var x = document.getElementById("topNav");
   if (x.className === "topnav") {
-    x.className += "responsive";
+    x.className += "top-responsive";
   } else {
     x.className = "topnav";
   }
@@ -11,10 +13,10 @@ function topNav() {
 
 // Responsive Queries (Bottom)
 
-function botNav() {
+function botNavbar() {
   var x = document.getElementById("botNav");
   if (x.className === "botnav") {
-    x.className += "responsive";
+    x.className += "bottom-responsive";
   } else {
     x.className = "botnav";
   }

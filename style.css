@@ -1,0 +1,231 @@
+/* Welcome! Source code available here (https://git.io/fjuD7) */
+
+/* Body Styles */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  min-height: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 5vw;
+  color: white;
+}
+
+h2 {
+  font-size: 3vw;
+  color: white;
+}
+
+h3 {
+  font-size: 2.5vw;
+  color: white;
+}
+
+p {
+  color: #8d99ae;
+  line-height: 1.7;
+}
+
+@media screen and (min-width: 601px) {
+  p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 15px;
+  }
+}
+
+p2 {
+  font-size: 1vw;
+  text-align: center;
+  color: #8d99ae;
+  line-height: 1.7;
+}
+
+a {
+  color: #228ae6;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #228ae6;
+  color: white;
+  margin: 1em;
+}
+
+code {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  font-style: oblique;
+  background-color: #8d99ae;
+  color: #cfd8dc;
+}
+
+.heading {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  background-color: #228ae6;
+  padding: 10px;
+}
+
+.body {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+  border: 2px solid #228ae6;
+  padding: 8px;
+}
+
+/* Header */
+
+.topnav {
+  background-color: #228ae6;
+  overflow: hidden;
+  position: fixed;
+  width: auto;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.topnav a:hover {
+  background-color: #8d99ae;
+}
+
+.topnav a.active {
+  background-color: #fa5252;
+}
+
+.topnav .top-icon {
+  display: none;
+}
+
+/* Footer */
+
+.botnav {
+  background-color: #228ae6;
+  overflow: hidden;
+  position: fixed;
+  width: auto;
+}
+
+.botnav a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.botnav a:hover {
+  background-color: #8d99ae;
+}
+
+.botnav a.active {
+  background-color: #fa5252;
+}
+
+.botnav .bottom-icon {
+  display: none;
+}
+
+/* Responsive Queries (Top) */
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:last-child) {display: none;}
+  .topnav a.top-icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.top-responsive {position: relative;}
+  .topnav.top-responsive a.top-icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.top-responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Responsive Queries (Bottom) */
+
+@media screen and (max-width: 600px) {
+  .botnav a:not(:last-child) {display: none;}
+  .botnav a.bottom-icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .botnav.bottom-responsive {position: relative;}
+  .botnav.bottom-responsive a.bottom-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .botnav.bottom-responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Contact Form */
+
+input[type=text], input[type=email] {
+  width: 70%;
+  padding: 12px 10px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #228ae6;
+  color: #8d99ae;
+  font-size: 16px;
+}
+
+textarea {
+  font-family: 'Roboto', sans-serif;
+  width: 70%;
+  height: 150px;
+  padding: 12px 10px;
+  margin-top: 1em;
+  border: 2px solid #228ae6;
+  color: #8d99ae;
+  font-size: 16px;
+  outline: none;
+  resize: none;
+}
+
+input[type=submit] {
+  background-color: #228ae6;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  outline: none;
+}

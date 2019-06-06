@@ -1,5 +1,3 @@
-// Welcome! Source code available here (https://git.io/fjuD7)
-
 // Responsive Queries (Top)
 
 function topNavbar() {
@@ -21,3 +19,11 @@ function botNavbar() {
     x.className = "botnav";
   }
 }
+
+// Google Analytics
+
+window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-141685685-1');

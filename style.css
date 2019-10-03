@@ -85,7 +85,6 @@ code {
 
 .topnav {
   background-color: #228ae6;
-  overflow: hidden;
   position: fixed;
   width: auto;
 }
@@ -116,7 +115,6 @@ code {
 
 .botnav {
   background-color: #228ae6;
-  overflow: hidden;
   position: fixed;
   width: auto;
 }
